@@ -1,16 +1,2 @@
-.....F.                                                                  [100%]
-=================================== FAILURES ===================================
-_______________________________ test_total_waste _______________________________
-
-    def test_total_waste():
-        entries = dead_cells([np.eye(4), _w()])
-        t = total_waste(entries)
-        assert t["num_layers"] == 2
-        assert t["total_params"] == 32
->       assert t["total_zero_params"] == 7
-E       assert 19 == 7
-
-tests/test_census.py:62: AssertionError
-=========================== short test summary info ============================
-FAILED tests/test_census.py::test_total_waste - assert 19 == 7
-1 failed, 6 passed in 0.12s
+.......                                                                  [100%]
+7 passed in 0.11s
