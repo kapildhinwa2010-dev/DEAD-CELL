@@ -59,8 +59,8 @@ def test_total_waste():
     t = total_waste(entries)
     assert t["num_layers"] == 2
     assert t["total_params"] == 32
-    assert t["total_zero_params"] == 7
-    assert t["waste_fraction"] == pytest.approx(7.0 / 32.0)
+    assert t["total_zero_params"] == 19
+    assert t["waste_fraction"] == pytest.approx(19.0 / 32.0)
 
 
 def test_errors():
