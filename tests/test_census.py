@@ -5,7 +5,7 @@ from dead_cell.census import dead_cells, total_waste, weight_report
 
 
 def _w():
-    w = np.eye(4)
+    w = np.ones((4, 4))
     w[0, :] = 0.0
     w[:, 2] = 0.0
     return w
