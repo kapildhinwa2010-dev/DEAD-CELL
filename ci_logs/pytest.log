@@ -1,35 +1,5 @@
-F...FF.                                                                  [100%]
+.....F.                                                                  [100%]
 =================================== FAILURES ===================================
-______________________________ test_weight_report ______________________________
-
-    def test_weight_report():
-        r = weight_report(_w(), name="dense")
-        assert r["name"] == "dense"
-        assert r["shape"] == [4, 4]
-        assert r["params"] == 16
->       assert r["zero_rows"] == [0]
-E       assert [0, 2] == [0]
-E         
-E         Left contains one more item: 2
-E         
-E         Full diff: (-: missing in left side, +: extra in left side)
-E           [
-E               0,
-E         +     2,
-E           ]
-
-tests/test_census.py:19: AssertionError
-_____________________ test_dead_cells_without_activations ______________________
-
-    def test_dead_cells_without_activations():
-        entries = dead_cells([np.eye(4), _w()])
-        assert len(entries) == 2
-        assert entries[0]["name"] == "layer_0"
-        assert "never_active_neurons" not in entries[0]
->       assert entries[1]["zero_params"] == 7
-E       assert 14 == 7
-
-tests/test_census.py:54: AssertionError
 _______________________________ test_total_waste _______________________________
 
     def test_total_waste():
@@ -38,19 +8,9 @@ _______________________________ test_total_waste _______________________________
         assert t["num_layers"] == 2
         assert t["total_params"] == 32
 >       assert t["total_zero_params"] == 7
-E       assert 26 == 7
+E       assert 19 == 7
 
 tests/test_census.py:62: AssertionError
 =========================== short test summary info ============================
-FAILED tests/test_census.py::test_weight_report - assert [0, 2] == [0]
-  
-  Left contains one more item: 2
-  
-  Full diff: (-: missing in left side, +: extra in left side)
-    [
-        0,
-  +     2,
-    ]
-FAILED tests/test_census.py::test_dead_cells_without_activations - assert 14 == 7
-FAILED tests/test_census.py::test_total_waste - assert 26 == 7
-3 failed, 4 passed in 0.12s
+FAILED tests/test_census.py::test_total_waste - assert 19 == 7
+1 failed, 6 passed in 0.12s
