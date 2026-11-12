@@ -1,5 +1,7 @@
 # DEAD-CELL
 
+[![Stars](https://img.shields.io/github/stars/kapildhinwa2010-dev/DEAD-CELL?style=flat-square)](https://github.com/kapildhinwa2010-dev/DEAD-CELL/stargazers) [![Forks](https://img.shields.io/github/forks/kapildhinwa2010-dev/DEAD-CELL?style=flat-square)](https://github.com/kapildhinwa2010-dev/DEAD-CELL/network/members) [![Issues](https://img.shields.io/github/issues/kapildhinwa2010-dev/DEAD-CELL?style=flat-square)](https://github.com/kapildhinwa2010-dev/DEAD-CELL/issues) [![Top language](https://img.shields.io/github/languages/top/kapildhinwa2010-dev/DEAD-CELL?style=flat-square)](https://github.com/kapildhinwa2010-dev/DEAD-CELL)
+
 The internal graveyard: dead weight rows, dead columns, and neurons that never fire.
 
 Point DEAD-CELL at weight matrices, and optionally at activation snapshots, and it maps the waste inside: exact zero rows, exact zero columns, the fraction of dead parameters, and (with activations) neurons that never rise above a threshold on any sample.
